@@ -18,7 +18,7 @@ namespace VNL2025Api.Services
             string url = year switch
             {
                 2024 => "https://en.volleyballworld.com/api/v1/volley-tournament/2024-05-1/2024-08-1/1439;1440",
-               2025 => "https://en.volleyballworld.com/api/v1/volley-tournament/2025-05-26/2025-07-16/1542;1543",
+               2025 => "https://en.volleyballworld.com/api/v1/volley-tournament/2025-05-26/2025-09-01/1542;1543",
                 _ => throw new ArgumentException("Invalid year specified.")
             };
             var response = await _httpClient.GetFromJsonAsync<Rootobject>(url);

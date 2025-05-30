@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddSingleton<AllDataService>();
 builder.Services.AddScoped<P2ReportService>();
+builder.Services.AddScoped<WikiFormatterService>();
 builder.Services.AddHttpClient();
 
 var app = builder.Build();
